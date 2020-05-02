@@ -6,6 +6,7 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
+// DB is a variable to connect with database
 var DB *gorm.DB
 
 // DBConfig represents db configuration
@@ -17,6 +18,7 @@ type DBConfig struct {
 	Password string
 }
 
+// BuildDBConfig configuration with database
 func BuildDBConfig() *DBConfig {
 	dbConfig := DBConfig{
 		Host:   "0.0.0.0",
